@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Bootstrap 3 - Creativity Tuts - Soni </title>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- Fixes Navigation Bar with drop down Menu
+  ================================================-->
+  
+  <div class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+           </button> 
+           <a href="#" class="navbar-brand">Creativity Tuts</a>
+        </div>
+         
+        <div class="navbar-collapse collapse">
+           <ul class=" nav navbar-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tutorials <b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                    <li><a href="#">Bootstrap Tutorials</a></li>
+                    <li><a href="#">PHP Tuts</a></li>
+                    <li><a href="#">Java Tuts</a></li>
+                    <li><a href="#">CSS Tuts</a></li>
+                 </ul>
+               </li>
+              <li><a href="#">About</a></li>
+           </ul>
+        </div>
+     </div>  
+  </div>
+  
+    <!-- Carousel
+====================================================-->
+  <div id="myCarousel" class="carousel slide">
+    <!-- carousel Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+      <!-- carousel-inner --> 
+    <div class="carousel-inner">
+        <!-- slides -->
+        <div class="item active">
+         <img src="images/slide1.jpg">
+         <div class="container">
+            <div class="carousel-caption">
+              <h1>My Heading Text</h1>
+              <p>This tag will contain the text which we want to appear on our slide.</p>
+              <p><a class="btn btn-large btn-primary">Sign Up</a></p>
+            </div>
+         </div>
+       </div>
+        
+        <div class="item">
+         <img src="images/slide2.jpg">
+         <div class="container">
+            <div class="carousel-caption">
+              <h1>My Heading Text</h1>
+              <p>This tag will contain the text which we want to appear on our slide.</p>
+              <p><a class="btn btn-large btn-primary">Sign Up</a></p>
+            </div>
+         </div>
+       </div>
+        
+         <div class="item">
+         <img src="images/slide3.jpg">
+         <div class="container">
+            <div class="carousel-caption">
+              <h1>My Heading Text</h1>
+              <p>This tag will contain the text which we want to appear on our slide.</p>
+              <p><a class="btn btn-large btn-primary">Sign Up</a></p>
+            </div>
+         </div>
+       </div>
+       <!--/slides -->
+        
+    </div><!-- /carousel-inner -->
+      
+    <!-- next and previous controls -->
+      
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+  </div> <!-- /Carousel -->
+    
+  <!-- Grid System
+=====================================================-->
+  <div class="container">
+     <!-- row1 -->
+     <div class="row">
+       <div class="col-md-4">
+            <h2>First Row with 3 columns of 4 columns each</h2>
+            <p>Some text will go here.Some text will go here.Some text will go here.Some text will go here.</p>
+       </div>
+        <div class="col-md-4">
+            <h2>First Heading</h2>
+            <p>Some text will go here.Some text will go here.Some text will go here.Some text will go here.</p>
+       </div>
+        <div class="col-md-4">
+            <h2>First Heading</h2>
+            <p>Some text will go here.Some text will go here.Some text will go here.Some text will go here.</p>
+       </div>
+    </div><!-- /end of row 1 -->
+      
+    <!-- row 2 -->
+    <div class="row">
+       <div class="col-md-6">
+           <h2>Second Row with 2 columns of size 6 columns each</h2>
+           <p>Some text will go here.Some text will go here.Some text will go here.Some text will go here.</p>
+       </div>
+       <div class="col-md-6">
+           <h2>Second Row with 2 columns of size 6 columns each</h2>
+           <p>Some text will go here.Some text will go here.Some text will go here.Some text will go here.</p>
+       </div>
+    </div>
+  </div>
+    
+  <!--- Font Awesome Icons 
+=====================================================-->
+ <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well">
+          <a href="#"><i class="largeIcon fa fa-hand-peace-o fa-2x"></i></a>
+          <a href="#"><i class="largeIcon fa fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="largeIcon fa fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="largeIcon fa fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </div>   
+ </div>
+ <!-- /font awesome -->
+    
+<!-- Footer and Modal --> 
+<div class="container">
+    <div class="row">
+       <div class="col-md-12">
+          <hr />
+          <p>Copyright &copy; Creativity Tuts.
+            <a data-toggle="modal" href="#myModal">Terms and Conditions</a>
+          </p>
+           
+          <!-- Modal -->
+           <div class="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-hidden="true">
+               <div class="modal-dialog">
+                 <div class="modal-content">
+                     <div class="modal-header">
+                        <h2>Terms and Conditions</h2>
+                     </div>
+                     <div class="modal-body">
+                        <p>The text will go here.......</p>
+                     </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                     </div>
+                 </div>
+               </div>
+           
+           </div><!-- /Modal -->
+       </div>
+    </div>
+ </div><!-- /Footer and Modal -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
