@@ -43,11 +43,24 @@
     
   <!-- Form 
 ==================================================-->
+  <br/><br/><br/><!-- break tags added to give some padding/space on top,bcz otherwise
+  its gonna hide behind fixed -top- navigation bar ,we can also use css-->
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        
-      
+         <h2>Contact Form</h2><hr />
+         <form class="form-horizontal">
+            <div class="form-group">
+               <label for="name" class="col-sm-2 control-label">Name</label>
+               <div class="col-sm-6">
+                   <input type="text" class="form-control" placeholder="Enter Name...."/>
+               </div>
+               <label for="email" class="col-sm-2 control-label">Email</label>
+               <div class="col-sm-6">
+                   <input type="email" class="form-control" placeholder="Enter Email...."/>
+               </div>
+            </div>
+         </form>
         </div>
       </div>
   </div>
