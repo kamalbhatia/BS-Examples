@@ -132,6 +132,34 @@
     </div>
   </div>
     
+<!-- Content Hover 
+=====================================================-->
+ <div class="container">
+    <div class="row">  
+       <div class="col-md-3">
+           <img id="d1" src="images/slide1.jpg">
+           <div class="contenthover">
+           <h3>Lorem ipsum dolor</h3>
+           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.                 Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+           <p><a href="#" class="mybutton">Lorem ipsum</a></p>
+        </div>
+      </div>
+   </div>
+     
+     <div class="row">  
+       <div class="col-md-3 col-md-offset-1">
+           <img id="d2" src="images/slide2.jpg">
+           <div class="contenthover">
+           <h3>Lorem ipsum dolor</h3>
+           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.                 Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+           <p><a href="#" class="mybutton">Lorem ipsum</a></p>
+        </div>
+      </div>
+   </div> 
+</div>
+    
+
+  
   <!--- Font Awesome Icons 
 =====================================================-->
  <div class="container">
@@ -179,5 +207,19 @@
  </div><!-- /Footer and Modal -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/contentHover.js"></script>
+  <script type="text/javascript">
+      $('#d1').contenthover({
+         overlay_background:'#000',
+         overlay_opacity:0.8
+      });
+      
+      $('#d2').contenthover({
+        effect:'slide',
+        slide_speed:300,
+        overlay_background:'#000',
+        overlay_opacity:0.8,
+      });
+  </script>
 </body>
 </html>
